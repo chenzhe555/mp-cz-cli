@@ -1,0 +1,41 @@
+{
+  "bin": {
+    "mp-cz": "bin/mp-cz.js",
+    "mp-cz-init": "bin/mp-cz-init.js"
+  },
+  "name": "mp-cz-cli",
+  "version": "0.0.1",
+  "description": "小程序-脚手架",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chenzhe555/mp-cz-cli.git"
+  },
+  "keywords": [
+    "mp",
+    "miniprogram",
+    "cli",
+    "cz"
+  ],
+  "author": "陈哲是个好孩子",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/chenzhe555/mp-cz-cli/issues"
+  },
+  "homepage": "https://github.com/chenzhe555/mp-cz-cli#readme",
+  "dependencies": {
+    "chalk": "^2.4.2",
+    "commander": "^3.0.2",
+    "download-git-repo": "^2.0.0",
+    "exit": "^0.1.2",
+    "inquirer": "^7.0.0",
+    "ora": "^4.0.2"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.0.3",
+    "eslint": "^6.5.1"
+  }
+}
