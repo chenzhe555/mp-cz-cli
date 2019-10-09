@@ -1,9 +1,9 @@
-# mp-cz-cli
+# mp-cz-cli2
 小程序-脚手架
 ## 🎯 Install
 
 ```
-npm i -g mp-cz-cli
+npm i -g mp-cz-cli2
 ```
 
 ## 🚀 Usage
