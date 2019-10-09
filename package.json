@@ -4,7 +4,7 @@
     "mp-cz-init": "bin/mp-cz-init.js"
   },
   "name": "mp-cz-cli",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "小程序-脚手架",
   "main": "index.js",
   "scripts": {
