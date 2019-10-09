@@ -46,8 +46,10 @@ function modifyFile(filePath, params) {
 function modifyRelationFile(params) {
     const { project_name, version, desc, entry, author, license, appid, sdkversion } = params;
 
+    const basePath = process.cwd();
+
     // package.json
-    const packageJSONPath = path.join(__dirname, '../' + project_name + '/package.json');
+    const packageJSONPath = path.join(basePath, project_name + '/package.json');
     modifyFile(packageJSONPath, {
         name: project_name,
         version,
@@ -58,7 +60,7 @@ function modifyRelationFile(params) {
     });
 
     // project.config.json
-    const projectConfigJSONPath = path.join(__dirname, '../' + project_name + '/project.config.json');
+    const projectConfigJSONPath = path.join(basePath, project_name + '/project.config.json');
     modifyFile(projectConfigJSONPath, {
         projectname: project_name,
         appid,
