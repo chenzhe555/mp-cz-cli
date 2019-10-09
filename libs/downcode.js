@@ -33,7 +33,7 @@ function downLoadGitCode(params) {
             spinner.succeed();
             console.log(chalk.green('项目生成成功!'));
             console.log(`请执行命令: cd ${project_name} && npm install \n`);
-            console.log(chalk.green('后续加入项目&小程序配置的修改，前期先自己复制吧~'));
+            exit(0);
         }
     );
 }

@@ -32,7 +32,7 @@ inquirer
             license = 'MIT';
         }
         if (appid.length === 0) {
-            appid = 'wx68dd72653ed17ad7-1';
+            appid = 'wx68dd72653ed17ad7';
         }
         if (sdkversion.length === 0) {
             sdkversion = '2.8.3';
