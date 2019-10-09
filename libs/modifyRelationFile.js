@@ -1,6 +1,5 @@
 const fs = require('fs');
 const path = require('path');
-const exit = require('exit');
 
 /**
  * 修改文件内容
@@ -17,26 +16,6 @@ function modifyFile(filePath, params) {
     obj = Object.assign({}, obj, params);
     // 写入文件
     fs.writeFileSync(filePath,JSON.stringify(obj, 'null', '\t'));
-
-    // fs.readFileSync(filePath, function(err, data){
-    //     if (err) {
-    //         console.log(path + '文件读取失败!');
-    //         exit(0);
-    //     }
-
-    //     // 二进制转换为字符串
-    //     let obj = data.toString();
-    //     // 转JSON对象
-    //     obj = JSON.parse(obj);
-    //     obj = Object.assign({}, obj, params);
-    //     // 写入文件
-    //     fs.writeFileSync(filePath,JSON.stringify(obj, 'null', '\t'),function(error){
-    //         if (error){
-    //             console.log(path + '文件写入失败!');
-    //             exit(0);
-    //         }
-    //     });
-    // });
 }
 
 /**
@@ -66,6 +45,9 @@ function modifyRelationFile(params) {
         appid,
         libVersion: sdkversion
     });
+
+    // README.md
+    fs.writeFileSync(path.join(basePath, project_name + '/README.md'),'# ' + project_name + '\n小程序-' + project_name);
 }
 
 module.exports = modifyRelationFile;
